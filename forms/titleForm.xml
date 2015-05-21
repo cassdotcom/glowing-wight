@@ -1,0 +1,51 @@
+<!-- <Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Title="WELCOME"
+	Width="416" Height="480">
+
+	<Grid Name="LayoutRoot" Background="#FFEEEEEE" RenderTransformOrigin="0.5,0.5">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="179*"/>
+			<RowDefinition Height="101*"/>
+			<RowDefinition Height="173*"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<Image Margin="10,38,0,0" Source="C:\Users\cass\Documents\Visual Studio 2013\Projects\pshell_gui\forms\sgn.png" Stretch="Fill" Opacity="0.305" Grid.Row="1" Grid.RowSpan="2" HorizontalAlignment="Left" Width="394.262"/>
+		<Label Name="logo_TITLE" Content="NETWORK PLANNING CBM CREATION" Margin="21.315,10,26.685,126.723" FontFamily="/pshell_gui;component/Fonts/#Calibri" FontSize="21.333" FontWeight="ExtraBold" TextOptions.TextFormattingMode="Display" Foreground="#FF292A3A" BorderBrush="#FF0A0E5B" BorderThickness="0,0,0,4" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Width="360"/>
+		<Button Name="bt_CBM" Content="CBM" Margin="115,102.156,0,16.567" RenderTransformOrigin="0.388,0.414" Background="#FFFFFBB1" BorderBrush="Black" FontFamily="/pshell_gui;component/Fonts/#Calibri" FontSize="16" FontWeight="Bold" TextOptions.TextFormattingMode="Display" OpacityMask="Black" HorizontalAlignment="Left" Width="172"/>
+		<Button Name="bt_VERIFY" Content="VERIFY" Margin="115,24.433,0,0" VerticalAlignment="Top" Height="60.277" RenderTransformOrigin="0.388,0.414" Background="#FFFFFBB1" BorderBrush="Black" FontFamily="/pshell_gui;component/Fonts/#Calibri" FontSize="16" FontWeight="Bold" TextOptions.TextFormattingMode="Display" OpacityMask="Black" Grid.Row="1" HorizontalAlignment="Left" Width="172"/>
+		<Button Name="bt_VIEW" Content="VIEW NETWORKS" Margin="115,24.723,0,0" VerticalAlignment="Top" Height="60.277" RenderTransformOrigin="0.388,0.414" Background="#FFFFFBB1" BorderBrush="Black" FontFamily="/pshell_gui;component/Fonts/#Calibri" FontSize="16" FontWeight="Bold" TextOptions.TextFormattingMode="Display" OpacityMask="Black" Grid.Row="2" HorizontalAlignment="Left" Width="172"/>
+	</Grid>
+</Window> -->
+
+<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Title="WELCOME"
+	Width="416" Height="480">
+
+	<Grid Name="LayoutRoot" Background="#FFEEEEEE" RenderTransformOrigin="0.5,0.5">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="179*"/>
+			<RowDefinition Height="101*"/>
+			<RowDefinition Height="173*"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<Image Margin="10,38,0,0" Source="C:\Users\cass\Documents\Visual Studio 2013\Projects\pshell_gui\forms\sgn.png" Stretch="Fill" Opacity="0.305" Grid.Row="1" Grid.RowSpan="2" HorizontalAlignment="Left" Width="394.262"/>
+		<Viewbox Margin="21.315,10,26.685,126.723" HorizontalAlignment="Center" Width="360" Stretch="Fill">
+			<Label Name="logo_TITLE" Content="NETWORK PLANNING CBM CREATION" FontFamily="/pshell_gui;component/Fonts/#Calibri" FontSize="18" FontWeight="ExtraBold" TextOptions.TextFormattingMode="Display" Foreground="#FF292A3A" BorderBrush="#FF0A0E5B" BorderThickness="0,0,0,4" HorizontalContentAlignment="Center" Height="42.277" Width="360"/>
+		</Viewbox>
+		<Viewbox Margin="115,102.156,121,88" Grid.RowSpan="3" Stretch="Fill">
+			<Grid Height="262.844" Width="172">
+				<Button Name="bt_CBM" Content="CBM" Margin="0,0,0,202.567" RenderTransformOrigin="0.388,0.414" Background="#FFFFFBB1" BorderBrush="Black" FontFamily="/pshell_gui;component/Fonts/#Calibri" FontSize="16" FontWeight="Bold" TextOptions.TextFormattingMode="Display" OpacityMask="Black" HorizontalAlignment="Left" Width="172"/>
+				<Button Name="bt_VERIFY" Content="VERIFY" Margin="0,101.277,0,0" VerticalAlignment="Top" Height="60.277" RenderTransformOrigin="0.388,0.414" Background="#FFFFFBB1" BorderBrush="Black" FontFamily="/pshell_gui;component/Fonts/#Calibri" FontSize="16" FontWeight="Bold" TextOptions.TextFormattingMode="Display" OpacityMask="Black" HorizontalAlignment="Left" Width="172"/>
+				<Button Name="bt_VIEW" Content="VIEW NETWORKS" Margin="0,202.567,0,0" VerticalAlignment="Top" Height="60.277" RenderTransformOrigin="0.388,0.414" Background="#FFFFFBB1" BorderBrush="Black" FontFamily="/pshell_gui;component/Fonts/#Calibri" FontSize="16" FontWeight="Bold" TextOptions.TextFormattingMode="Display" OpacityMask="Black" HorizontalAlignment="Left" Width="172"/>
+			</Grid>
+		</Viewbox>
+	</Grid>
+</Window>

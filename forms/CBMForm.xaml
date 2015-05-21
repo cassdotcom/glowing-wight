@@ -8,7 +8,7 @@
     		<ColumnDefinition Width="178*"/>
     		<ColumnDefinition Width="0*"/>
     	</Grid.ColumnDefinitions>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="43,29,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="423" Grid.ColumnSpan="2"/>
+        <TextBox Name="TB1" HorizontalAlignment="Left" Height="23" Margin="43,29,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="423" Grid.ColumnSpan="2"/>
         <Button Name="Button1" Content="Button" HorizontalAlignment="Left" Margin="93,292.723,0,0" VerticalAlignment="Top" Width="75" Height="20.277" Grid.Column="1"/>
         <RichTextBox HorizontalAlignment="Left" Height="130" Margin="43,106,0,0" VerticalAlignment="Top" Width="423" Grid.ColumnSpan="2">
         	<FlowDocument>
