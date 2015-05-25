@@ -1,0 +1,37 @@
+<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Title="NETWORK PLANNING CBM"
+	Width="1050" Height="500" Icon="C:\Users\ac00418\Documents\gui\sandbox\sgn_brand_noname.png">
+
+
+	<Grid Name="LayoutRoot" Margin="0,0,0,0">
+		<Image Margin="10,38,0,0" Source="C:\Users\ac00418\Documents\gui\sandbox\sgn_brand_noname.png" 
+			Stretch="Fill" Opacity="0.305" Grid.Row="1" Grid.RowSpan="2" HorizontalAlignment="Right" />
+		<Button Name="bt_CBM" Content="CBM" HorizontalAlignment="Left" 
+			Margin="11,73,0,0" VerticalAlignment="Top" Width="150" Height="40" Background="#FFA0BDC5"/>
+		<Button Name="bt_VERIFY" Content="VERIFY" HorizontalAlignment="Left" 
+			Margin="11,131,0,0" VerticalAlignment="Top" Width="150" Height="40" RenderTransformOrigin="-0.227,-0.444"/>
+		<Button Name="bt_VIEW" Content="VIEW NETWORKS" HorizontalAlignment="Left" 
+			Margin="11,189,0,0" VerticalAlignment="Top" Width="150" Height="40" />
+		<Button Name="bt_SPARE1" Content="SPARE1" HorizontalAlignment="Left" 
+			Margin="11,247,0,0" VerticalAlignment="Top" Width="150" Height="40" />
+		<Button Name="bt_SPARE2" Content="SPARE2" HorizontalAlignment="Left" 
+			Margin="11,305,0,0" VerticalAlignment="Top" Width="150" Height="40" />
+			
+		<Label Name="logo_TITLE" Content="NETWORK PLANNING CBM CREATION" HorizontalAlignment="Left" 
+			Margin="10,15,0,0" VerticalAlignment="Top" Width="300" FontSize="16" FontWeight="ExtraBold" Foreground="#FF292A3A"/>
+			
+		<Border BorderThickness="2" BorderBrush="Black"  Margin="170,73,0,0" VerticalAlignment="Top" Width="800" Height="300">
+			<TextBox  Name="tx_dets" Margin="0,0,0,0" VerticalAlignment="Top" Height="300" Width="800" TextWrapping="Wrap" 
+				AcceptsReturn="true" VerticalScrollBarVisibility="Visible" Opacity="0.6" FontWeight="ExtraBold" />
+		</Border>
+		
+		<Button Name="bt_EXIT" Content="EXIT" HorizontalAlignment="Right" 
+			Margin="0,0,30,30" VerticalAlignment="Bottom" Width="150" Height="40"
+			Background="#FFDDAE4A" Foreground="#FF000000"/>
+		<Button Name="bt_HELP" Content="HELP" HorizontalAlignment="Right" 
+			Margin="0,0,190,30" VerticalAlignment="Bottom" Width="150" Height="40"
+			Background="#FFDDAE4A" Foreground="#FF000000"/>
+	</Grid>
+</Window>
