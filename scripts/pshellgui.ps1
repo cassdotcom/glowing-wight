@@ -1,17 +1,14 @@
 #Required to load the XAML form and create the PowerShell Variables
 
-#.\loadDialog.ps1 -XamlPath 'C:\Users\cass\Documents\Visual Studio 2013\Projects\pshell_gui\forms\CBMForm.xaml'
-.\loadDialog.ps1 -XamlPath 'C:\Users\cass\Documents\Visual Studio 2013\Projects\pshell_gui\forms\titleForm.xml'
+#.\loadDialog.ps1 -XamlPath 'CBMForm.xaml'
+#.\loadDialog.ps1 -XamlPath 'titleForm.xaml'
+.\loadDialog.ps1 -XamlPath 'Form2.xaml'
 
 #EVENT Handler
-
-$bt_CBM.add_Click({
-
- $logo_TITLE.Content = "Hello World"
-
-})
-
+$bt_CBM.add_Click({ $logo_TITLE.Content = .\other_script\callTask.ps1 })
+$bt_VERIFY.add_Click({ $logo_TITLE.Content = "OPTION 2" })
+$bt_VIEW.add_Click({ $logo_TITLE.Content = "OPTION 3" })
+#$bt_VIEW.add_Click({ $logo_TITLE.Content = "ID is $($ID)" })
 
 #Launch the window
-
 $xamGUI.ShowDialog() | out-null
