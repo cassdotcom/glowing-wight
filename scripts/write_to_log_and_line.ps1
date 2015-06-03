@@ -21,7 +21,7 @@
 	Try {
 	
 		$date_and_time = get_timestamp -reporting
-		$tx_dets.AppendText("`r$($msg)")
+		$tb_MAIN.AppendText("`r$($msg)")
 		"$($date_and_time):`t$($msg)" | Out-File -filepath $PSHELL_LOG_FILE -append
 		
 	} Catch {
